@@ -1,0 +1,27 @@
+{
+  "name": "bom-pastor",
+  "author": "Gustavo André",
+  "version": "1.0.0",
+  "description": "Instituto Bom Pastor - Organização sem fins lucrativos que atua em diversas áreas sociais, promovendo a inclusão e o desenvolvimento humano.",
+  "keywords": [
+    "Instituto Bom Pastor",
+    "Organização sem fins lucrativos",
+    "Inclusão social",
+    "Desenvolvimento humano"
+  ],
+  "license": "UNLICENSED",
+  "type": "module",
+  "private": true,
+  "main": "index.js",
+  "homepage": "https://github.com/Gustx21/Instituto-Bom-Pastor#readme",
+  "bugs": {
+    "url": "https://github.com/Gustx21/Instituto-Bom-Pastor/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gustx21/Instituto-Bom-Pastor.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
