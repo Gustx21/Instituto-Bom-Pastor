@@ -13,6 +13,9 @@
     <meta property="og:description" content="Instituto Bom Pastor - Organização sem fins lucrativos que atua em diversas áreas sociais, promovendo a inclusão e o desenvolvimento humano.">
     <meta property="og:url" content="https://github.com/Gustx21/Instituto-Bom-Pastor">
 
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="src/assets/pomba-da-paz.png">
+
     <!-- Style -->
     <link rel="stylesheet" href="src/style/home.css">
     <link rel="stylesheet" href="src/style/menu.css">
@@ -34,7 +37,8 @@
             <span><img src="./src/assets/menu.png" alt="Icon Menu"></span>
         </nav>
         <nav class="menu">
-            <a href="pages/about.html" target="_parent">Sobre</a>
+            <img src="src/assets/pomba-da-paz.png" alt="Logo do Instituto Bom Pastor">
+            <a href="pages/about.html" target="_parent">Sobre Nós</a>
             <a href="pages/projects.html" target="_parent">Projetos</a>
             <a href="#" target="_parent">Transparência</a>
             <a href="#" target="_parent">Equipe</a>
@@ -46,12 +50,28 @@
     </header>
 
     <section class="hero">
-        <img src="src/assets/ron-lach.jpg"
-            alt="Imagem de Fundo mostrando uma comunidade agindo em relação a um projeto">
-        <main>
-            <h1>Bem-vindo ao Instituto Bom Pastor</h1>
-            <p>Transformando vidas e corações através da solidariedade e inclusão social.</p>
-        </main>
+        <section class="overlay active">
+            <img src="src/assets/ron-lach.jpg"
+                alt="Imagem de Fundo mostrando uma comunidade agindo em relação a um projeto">
+            <main>
+                <h1>Bem-vindo ao Instituto Bom Pastor</h1>
+                <p>Transformando vidas e corações através da solidariedade e inclusão social.</p>
+            </main>
+        </section>
+        <section class="overlay">
+            <img src="src/assets/hotaru.jpg" alt="">
+            <main>
+                <h1>Instituto Bom Pastor</h1>
+                <p>Uma organização sem fins lucrativos dedicada a promover a inclusão e o desenvolvimento humano.</p>
+            </main>
+        </section>
+        <section class="overlay">
+            <img src="src/assets/mccutcheon.jpg" alt="">
+            <main>
+                <h1>Instituto Bom Pastor</h1>
+                <p>Uma organização sem fins lucrativos dedicada a promover a inclusão e o desenvolvimento humano.</p>
+            </main>
+        </section>
     </section>
 
     <section class="about">
@@ -68,7 +88,7 @@
 
             <!-- Verificar links -->
             <button type="button">Saiba Mais</button>
-            <button type="button">Doe Agora</button>
+            <button type="button" id="dotation">Doe Agora</button>
         </nav>
     </section>
 
@@ -78,32 +98,48 @@
         </header>
         <aside class="project-list">
             <article>
-                <img src="src/assets/hotaru.jpg" alt="Caminhão do Banho">
-                <h3>Caminhão do Banho</h3>
-                <p>Oferecemos serviços de higiene e saúde para pessoas em situação de rua, promovendo dignidade e
-                    bem-estar.</p>
-                <a href="pages/projects.html">Saiba Mais</a>
+                <header>
+                    <img src="src/assets/hotaru.jpg" alt="Caminhão do Banho">
+                    <h3>Caminhão do Banho</h3>
+                    <p>Oferecemos serviços de higiene e saúde para pessoas em situação de rua, promovendo dignidade e
+                        bem-estar.</p>
+                </header>
+                <nav>
+                    <a href="pages/projects.html">Saiba Mais</a>
+                </nav>
             </article>
             <article>
-                <img src="src/assets/mccutcheon.jpg" alt="Escola dos Sonhos">
-                <h3>Escola dos Sonhos</h3>
-                <p>Desenvolvemos ações de promoção à saúde, oferecendo suporte e orientação às famílias em situação de
-                    vulnerabilidade.</p>
-                <a href="pages/projects.html">Saiba Mais</a>
+                <header>
+                    <img src="src/assets/mccutcheon.jpg" alt="Escola dos Sonhos">
+                    <h3>Escola dos Sonhos</h3>
+                    <p>Desenvolvemos ações de promoção à saúde, oferecendo suporte e orientação às famílias em situação de
+                        vulnerabilidade.</p>
+                </header>
+                <nav>
+                    <a href="pages/projects.html">Saiba Mais</a>
+                </nav>
             </article>
             <article>
-                <img src="src/assets/ron-lach.jpg" alt="Padre Lothario">
-                <h3>Padre Lothario</h3>
-                <p>Realizamos um trabalho de acolhimento e apoio a pessoas em situação de rua, buscando reintegrá-las à
-                    sociedade.</p>
-                <a href="pages/projects.html">Saiba Mais</a>
+                <header>
+                    <img src="src/assets/ron-lach.jpg" alt="Padre Lothario">
+                    <h3>Padre Lothario</h3>
+                    <p>Realizamos um trabalho de acolhimento e apoio a pessoas em situação de rua, buscando reintegrá-las à
+                        sociedade.</p>
+                </header>
+                <nav>
+                    <a href="pages/projects.html">Saiba Mais</a>
+                </nav>
             </article>
             <article>
-                <img src="src/assets/rudy-hartono.jpg" alt="Missão Koibe">
-                <h3>Missão Koibe</h3>
-                <p>Realizamos um trabalho de acolhimento e apoio a pessoas em situação de rua, buscando reintegrá-las à
-                    sociedade.</p>
-                <a href="pages/projects.html">Saiba Mais</a>
+                <header>
+                    <img src="src/assets/rudy-hartono.jpg" alt="Missão Koibe">
+                    <h3>Missão Koibe</h3>
+                    <p>Realizamos um trabalho de acolhimento e apoio a pessoas em situação de rua, buscando reintegrá-las à
+                        sociedade.</p>
+                </header>
+                <nav>
+                    <a href="pages/projects.html">Saiba Mais</a>
+                </nav>
             </article>
         </aside>
     </section>
@@ -131,16 +167,6 @@
             </article>
             <img src="src/assets/ron-lach.jpg" alt="Ron Lach">
         </aside>
-        <footer>
-            <header>
-                <h4>Faça a diferença!</h4>
-                <p>Seu apoio é o ponto chave para a mudança.</p>
-            </header>
-            <nav>
-                <button type="button">Saiba Mais</button>
-                <button type="button">Doe Agora</button>
-            </nav>
-        </footer>
     </section>
 
     <section class="community">
@@ -150,13 +176,13 @@
             <p>Estamos presentes em diversas comunidades, sempre buscando entender e atender às necessidades locais.</p>
 
             <!-- Revisar função com JS -->
-            <button type="button">Doe agora</button>
+            <button type="button" id="dotation">Doe agora</button>
         </section>
     </section>
 
     <footer>
         <figure>
-            <img src="src/assets/logo.png" alt="Logo do Instituto Bom Pastor">
+            <img src="src/assets/pomba-da-paz.png" alt="Logo do Instituto Bom Pastor">
             <figcaption>Instituto Bom Pastor</figcaption>
         </figure>
         <nav>
