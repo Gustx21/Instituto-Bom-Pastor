@@ -14,13 +14,13 @@
     <meta property="og:url" content="https://github.com/Gustx21/Instituto-Bom-Pastor">
 
     <!-- Icon -->
-    <link rel="icon" type="image/x-icon" href="src/assets/pomba-da-paz.png">
+    <link rel="icon" type="image/x-icon" href="../src/assets/pomba-da-paz.png">
 
     <!-- Style -->
     <link rel="stylesheet" href="src/style/home.css">
-    <link rel="stylesheet" href="src/style/menu.css">
-    <link rel="stylesheet" href="src/style/main.css">
-    <link rel="stylesheet" href="src/style/footer.css">
+    <link rel="stylesheet" href="../src/style/menu.css">
+    <link rel="stylesheet" href="../src/style/main.css">
+    <link rel="stylesheet" href="../src/style/footer.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Scripts -->
-    <script src="./src/scripts/index.js" defer></script>
+    <script src="./src/scripts/home.js" defer></script>
 </head>
 <body>
     <header>
@@ -38,14 +38,13 @@
         </nav>
         <nav class="menu">
             <img src="src/assets/pomba-da-paz.png" alt="Logo do Instituto Bom Pastor">
+            <a href="home.html" target="_self">Início</a>
             <a href="pages/about.html" target="_parent">Sobre Nós</a>
             <a href="pages/projects.html" target="_parent">Projetos</a>
             <a href="#" target="_parent">Transparência</a>
-            <a href="#" target="_parent">Equipe</a>
             <a href="mailto:missionariosbompastor@gmail.com" target="_blank">E-mail</a>
 
-            <!-- Revisar função com JS -->
-            <button type="button">Doe Agora</button>
+            <button type="button" class="donate-btn">Doe Agora</button>
         </nav>
     </header>
 
@@ -61,15 +60,15 @@
         <section class="overlay">
             <img src="src/assets/hotaru.jpg" alt="">
             <main>
-                <h1>Instituto Bom Pastor</h1>
+                <h1>Combata a fome,<br> espalhe esperança</h1>
                 <p>Uma organização sem fins lucrativos dedicada a promover a inclusão e o desenvolvimento humano.</p>
             </main>
         </section>
         <section class="overlay">
             <img src="src/assets/mccutcheon.jpg" alt="">
             <main>
-                <h1>Instituto Bom Pastor</h1>
-                <p>Uma organização sem fins lucrativos dedicada a promover a inclusão e o desenvolvimento humano.</p>
+                <h1>Nutra o mundo,<br>diga sim a compaixão</h1>
+                <p>alimentar alguém vai além de um gesto solidário, é um ato de transformação.</p>
             </main>
         </section>
     </section>
@@ -85,10 +84,8 @@
             </p>
         </header>
         <nav>
-
-            <!-- Verificar links -->
-            <button type="button">Saiba Mais</button>
-            <button type="button" id="dotation">Doe Agora</button>
+            <button type="button" class="learn-more-btn">Saiba Mais</button>
+            <button type="button" class="donate-btn">Doe Agora</button>
         </nav>
     </section>
 
@@ -105,7 +102,7 @@
                         bem-estar.</p>
                 </header>
                 <nav>
-                    <a href="pages/projects.html">Saiba Mais</a>
+                    <a href="pages/projects.html">Saiba Mais &#10095;</a>
                 </nav>
             </article>
             <article>
@@ -116,7 +113,7 @@
                         vulnerabilidade.</p>
                 </header>
                 <nav>
-                    <a href="pages/projects.html">Saiba Mais</a>
+                    <a href="pages/projects.html">Saiba Mais &#10095;</a>
                 </nav>
             </article>
             <article>
@@ -127,7 +124,7 @@
                         sociedade.</p>
                 </header>
                 <nav>
-                    <a href="pages/projects.html">Saiba Mais</a>
+                    <a href="pages/projects.html">Saiba Mais &#10095;</a>
                 </nav>
             </article>
             <article>
@@ -138,7 +135,7 @@
                         sociedade.</p>
                 </header>
                 <nav>
-                    <a href="pages/projects.html">Saiba Mais</a>
+                    <a href="pages/projects.html">Saiba Mais &#10095;</a>
                 </nav>
             </article>
         </aside>
@@ -175,9 +172,15 @@
             <h2>Saiba mais sobre nossa atuação</h2>
             <p>Estamos presentes em diversas comunidades, sempre buscando entender e atender às necessidades locais.</p>
 
-            <!-- Revisar função com JS -->
-            <button type="button" id="dotation">Doe agora</button>
+            <button type="button" class="learn-more-btn">Saiba Mais</button>
         </section>
+    </section>
+
+    <section class="donate">
+        <h2>Faça a Diferença</h2>
+        <p>Contribua com nosso trabalho e ajude a transformar vidas. Sua doação é fundamental para continuarmos nossa missão.</p>
+        
+        <button type="button" class="donate-btn">Doe Agora</button>
     </section>
 
     <footer>
@@ -188,7 +191,7 @@
         <nav>
             <h3>Institucional</h3>
             <a href="pages/about.html" target="_parent">Sobre Nós</a>
-            <a href="pages/projects.html" target="_parent">Missão e Visão</a>
+            <a href="pages/projects.html" target="_parent">Missão</a>
             <a href="#" target="_parent">Equipe</a>
         </nav>
         <nav>

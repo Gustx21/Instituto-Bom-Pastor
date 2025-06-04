@@ -17,7 +17,6 @@ window.addEventListener('click', (event) => {
 });
 
 // GOQR.ME/API
-// plano de negócio
 
 // This script is used to show a carousel of images with next and previous buttons.
 
@@ -39,7 +38,7 @@ function nextSlide() {
 }
 
 function startCarousel() {
-    carouselInterval = setInterval(nextSlide, 5000);
+    carouselInterval = setInterval(nextSlide, 7000);
 }
 
 function stopCarousel() {
@@ -52,3 +51,26 @@ if (slides.length) {
 } else {
     stopCarousel();
 }
+
+// This script handles the donation button functionality
+// which redirects to the donate page.
+// It uses the 'pages/donate.html' path to redirect users.
+
+const donateButtons = document.querySelectorAll('.donate-btn');
+
+donateButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        window.open('pages/donate.html', '_self');
+    });
+});
+
+// This script handles the learn more button functionality
+// which redirects to the projects page.
+// It uses the 'pages/projects.html' path to redirect users.
+
+const learnMoreButtons = document.querySelectorAll('.learn-more-btn');
+learnMoreButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        window.open('pages/projects.html', '_self');
+    });
+});

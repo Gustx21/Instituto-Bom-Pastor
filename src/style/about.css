@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "DM Serif Text", serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #8C4130;
+    --secondary-color: #A6511F;
+    --tertiary-color: #BF7D2C;
+    --quaternary-color: #818C2A;
+    --quinary-color: #F2BC57;
+    --title-color: #343a40;
+    --text-color: #6c757d;
+    --background-color: #f8f9fa;
+}
+
+.basis {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    height: calc(100vh - 60px);
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    main {
+        align-self: center;
+        text-align: center;
+        z-index: 3;
+        padding: 2rem 2.5rem;
+        border-radius: 12px;
+
+        h1 {
+            font-family: "DM Serif Text", serif;
+            font-size: 4rem;
+            margin-top: 50px;
+            color: var(--title-color);
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            color: var(--text-color);
+            text-align: center;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin-top: 20px;
+
+            &:hover {
+                background-color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+.history {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    padding: 20px;
+
+    h2 {
+        font-size: 2rem;
+        color: var(--title-color);
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: var(--text-color);
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            background-color: var(--background-color);
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            text-align: center;
+
+            &:hover {
+                background-color: var(--quinary-color);
+                color: var(--background-color);
+            }
+        }
+    }
+}
