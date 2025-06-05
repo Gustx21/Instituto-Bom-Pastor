@@ -1,6 +1,6 @@
 # Instituto Bom Pastor
 
-Este é o repositório do site do Instituto Bom Pastor, uma instituição dedicada a projetos sociais, educacionais e comunitários.
+Este é o repositório do site do [Instituto Bom Pastor](https://gustx21.github.io/Instituto-Bom-Pastor/home.html), uma instituição dedicada a projetos sociais, educacionais e comunitários.
 
 ## Funcionalidades
 - Página inicial com informações institucionais
