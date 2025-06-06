@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "DM Serif Text", serif;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -111,6 +110,12 @@
             }
         }
     }
+
+    article:hover {
+        box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+        transform: translate(-3px, -3px);
+    }
 }
 
 .achievements {
@@ -148,7 +153,8 @@
         text-align: center;
         align-content: center;
         background-color: #fff;
-        border: 1px solid #000;
+        border: 1px solid #dee2e6;
+        box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
         border-radius: 10px;
         padding: 20px;
         height: 30vh;
@@ -333,8 +339,11 @@
     }
 
     .community {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+
         img {
-            width: 100%;
+            width: 70%;
         }
 
         section {

@@ -38,15 +38,15 @@ footer {
 
         figure {
             margin: 0 auto;
+
+            img {
+                margin: 0 auto;
+            }
         }
 
         nav {
             margin-top: 20px;
             align-items: center;
         }
-    }
-
-    img {
-        margin: 0 auto;
     }
 }

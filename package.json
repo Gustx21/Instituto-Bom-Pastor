@@ -12,7 +12,7 @@
   "license": "UNLICENSED",
   "type": "module",
   "private": true,
-  "main": "index.js",
+  "main": "home.html",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gustx21/Instituto-Bom-Pastor.git"

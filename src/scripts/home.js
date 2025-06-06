@@ -74,3 +74,13 @@ learnMoreButtons.forEach(button => {
         window.open('pages/projects.html', '_self');
     });
 });
+
+// This script handles the about button functionality
+// which redirects to the about page.
+
+const aboutButtons = document.querySelectorAll('.about-btn');
+aboutButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        window.open('pages/about.html', '_self');
+    });
+});

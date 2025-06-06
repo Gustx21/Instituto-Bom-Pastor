@@ -42,11 +42,9 @@
 
 .hamburger {
     display: none;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: space-between;
     cursor: pointer;
-    margin: 30px 40px;
+    margin: 25px;
 
     nav {
         width: 30px;
@@ -55,17 +53,16 @@
         margin: 4px 0;
         transition: 0.4s;
     }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
-    }
-
-    .hamburger span {
-        display: block;
-        height: 4px;
-        transition: .3s;
     }
 
     .menu {
@@ -75,6 +72,10 @@
         width: 100%;
         background-color: #f8f9fa;
         flex-direction: column;
+
+        img {
+            display: none;
+        }
     }
 
     .menu.active {
