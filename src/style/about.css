@@ -1,11 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.5;
-}
+@charset "utf-8";
 
 :root {
     --primary-color: #8C4130;
@@ -14,8 +7,20 @@
     --quaternary-color: #818C2A;
     --quinary-color: #F2BC57;
     --title-color: #343a40;
-    --text-color: #666;
-    --background-color: #f8f9fa;
+    --text-color: #6c757d;
+    --background-color: #DAD7CD;
+
+    --font-default: "Roboto", sans-serif;
+    --font-title: "DM Serif Text", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-default);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
 }
 
 .basis {
@@ -38,7 +43,7 @@
         border-radius: 12px;
 
         h1 {
-            font-family: "DM Serif Text", serif;
+            font-family: var(--font-title);
             font-size: 4rem;
             margin-top: 50px;
             color: var(--title-color);
@@ -80,7 +85,7 @@
         margin-bottom: 20px;
         
         h1 {
-            font-family: "DM Serif Text", serif;
+            font-family: var(--font-title);
             text-align: start;
             font-size: 2.2rem;
             margin-bottom: 20px;
@@ -131,6 +136,36 @@
 
 .team {}
 
+.solidariety {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    padding: 50px 0;
+
+    h1 {
+        font-family: var(--font-title);
+        font-size: 3rem;
+        color: var(--title-color);
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: var(--text-color);
+        text-align: center;
+        max-width: 800px;
+        margin-bottom: 30px;
+    }
+
+    img {
+        width: 80%;
+        max-width: 600px;
+        border-radius: 10px;
+    }
+}
+
 .supporters {
     display: flex;
     flex-direction: column;
@@ -147,4 +182,49 @@
     img {
         width: 70%;
     }
+}
+
+@media (max-width: 768px) {
+    .basis {
+        grid-template-columns: auto;
+        height: auto;
+
+        main {
+            padding: 1rem;
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        img {
+            display: none;
+        }
+    }
+
+    .history {
+        padding: 20px;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+            "header"
+            "mission"
+            "value"
+        ;
+
+        header, .mission, .values {
+            text-align: start;
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
+    .supporters img {
+        width: 90%;
+    }
+    
 }

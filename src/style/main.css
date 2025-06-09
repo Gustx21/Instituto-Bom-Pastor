@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 :root {
     --primary-color: #8C4130;
     --secondary-color: #A6511F;
@@ -6,7 +8,10 @@
     --quinary-color: #F2BC57;
     --title-color: #343a40;
     --text-color: #6c757d;
-    --background-color: #f8f9fa;
+    --background-color: #DAD7CD;
+
+    --font-default: "Roboto", sans-serif;
+    --font-title: "DM Serif Text", serif;
 }
 
 .hero {
@@ -43,7 +48,7 @@
             padding: 2rem 2.5rem;
 
             h1 {
-                font-family: "DM Serif Text", serif;
+                font-family: var(--font-title);
                 font-size: 4rem;
                 margin-top: 50px;
                 color: var(--background-color);
@@ -65,16 +70,20 @@
 /* Corrigir */
 @media (max-width: 768px) {
     .hero {
-        height: 60vh;
+        height: 40vh;
 
         .overlay {
+
             main {
-                padding: 1rem;
+                padding: 0;
+
                 h1 {
-                    font-size: 2.5rem;
+                    font-size: 1.5rem;
+                    margin-top: 0;
                 }
                 p {
-                    font-size: 1.2rem;
+                    font-size: 1rem;
+                    margin-top: 5px;
                 }
             }
         }

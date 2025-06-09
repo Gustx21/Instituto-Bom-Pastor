@@ -1,10 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+@charset "utf-8";
 
 :root {
     --primary-color: #8C4130;
@@ -15,6 +9,17 @@
     --title-color: #343a40;
     --text-color: #6c757d;
     --background-color: #DAD7CD;
+
+    --font-default: "Roboto", sans-serif;
+    --font-title: "DM Serif Text", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-default);
+    font-weight: 400;
+    font-style: normal;
 }
 
 .about {
@@ -26,7 +31,7 @@
     height: calc(90vh - 60px);
 
     h2 {
-        font-family: "DM Serif Text", serif;
+        font-family: var(--font-title);
         font-size: 3rem;
         margin-bottom: 20px;
         color: var(--tertiary-color);
@@ -36,9 +41,10 @@
         font-size: 1.2rem;
         margin-bottom: 20px;
         color: var(--text-color);
-        width: 600px;
+        width: 50%;
         line-height: 1.5;
         text-align: justify;
+        justify-self: center;
     }
 
     button {
@@ -56,7 +62,7 @@
     padding: 5%;
 
     h2 {
-        font-family: "DM Serif Text", serif;
+        font-family: var(--font-title);
         font-size: 2.3rem;
         margin: 20px 0 20px 20px;
         color: var(--title-color);
@@ -74,6 +80,7 @@
     article {
         border: 2px solid #dee2e6;
         border-radius: 10px;
+        transition: border-box 0.2s, box-shadow 0.2s, transform 0.2s;
         padding: 20px;
 
         img {
@@ -84,7 +91,7 @@
         }
 
         h3 {
-            font-family: "DM Serif Text", serif;
+            font-family: var(--font-title);
             font-size: 1.5rem;
             margin-bottom: 20px;
             color: var(--quaternary-color);
@@ -112,8 +119,7 @@
     }
 
     article:hover {
-        box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease;
+        box-shadow: 10px 10px 0 rgba(140, 65, 48, 0.16);
         transform: translate(-3px, -3px);
     }
 }
@@ -127,7 +133,7 @@
     padding: 5%;
 
     h2 {
-        font-family: "DM Serif Text", serif;
+        font-family: var(--font-title);
         font-size: 2.3rem;
         margin-bottom: 20px;
         color: var(--title-color);
@@ -154,13 +160,14 @@
         align-content: center;
         background-color: #fff;
         border: 1px solid #dee2e6;
-        box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 10px 10px 0 rgba(140, 65, 48, 0.16);
+        transform: translate(-5px, -5px);
         border-radius: 10px;
         padding: 20px;
         height: 30vh;
 
         h3 {
-            font-family: "DM Serif Text", serif;
+            font-family: var(--font-title);
             font-size: 1.5rem;
             margin-bottom: 20px;
             color: var(--title-color);
@@ -210,7 +217,7 @@
     }
 
     h2 {
-        font-family: "DM Serif Text", serif;
+        font-family: var(--font-title);
         font-size: 2.3rem;
         margin-bottom: 20px;
         color: var(--title-color);
@@ -244,7 +251,7 @@
     background-color: #DAD7CD;
 
     h2 {
-        font-family: "DM Serif Text", serif;
+        font-family: var(--font-title);
         font-size: 3rem;
         margin-bottom: 20px;
         color: var(--title-color);
@@ -270,13 +277,17 @@
 
 @media (max-width: 768px) {
     .about {
+        height: max-content;
+        padding: 40px;
+        margin: 30px 0;
+
         h2 {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
 
         p {
             font-size: 1rem;
-            width: 90%;
+            width: 100%;
         }
 
         button {
@@ -286,7 +297,7 @@
 
     .projects {
         h2 {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -316,7 +327,7 @@
         padding: 3rem;
 
         h2 {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
 
         button {
@@ -351,7 +362,7 @@
         }
 
         h2 {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
 
         p {
@@ -367,7 +378,7 @@
         padding: 2rem;
 
         h2 {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         p {

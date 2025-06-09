@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <meta name="author" content="Instituto Bom Pastor">
     <meta name="description"
         content="Instituto Bom Pastor - Organização sem fins lucrativos que atua em diversas áreas sociais, promovendo a inclusão e o desenvolvimento humano.">
@@ -31,99 +33,164 @@
         rel="stylesheet">
 
     <!-- Scripts -->
-    <script src="../src/js/home.js" defer></script>
+    <script src="../src/scripts/burguer-btn.js" defer></script>
+    <script src="../src/scripts/redirect.js" defer></script>
 </head>
+
 <body>
-    <header>
+    <nav>
         <nav class="hamburger" id="hamburger">
-            <span>
-                <img src="../src/assets/pomba-da-paz.png" alt="Logo do Instituto Bom Pastor">
-                <img src="../src/assets/menu.png" alt="Logo de Menu">
-            </span>
+            <img src="../src/assets/pomba-da-paz.png" alt="Logo do Instituto Bom Pastor">
+            <img src="../src/assets/menu.png" alt="Logo de Menu">
         </nav>
         <nav class="menu">
             <img src="../src/assets/pomba-da-paz.png" alt="Logo do Instituto Bom Pastor">
             <a href="../home.html" target="_parent">Início</a>
             <a href="about.html" target="_parent">Sobre Nós</a>
-            <a href="#" target="_parent">Transparência</a>
-            <a href="#" target="_parent">Equipe</a>
+            <a href="projects.html">Projetos</a>
+            <a href="transparency.html" target="_parent">Transparência</a>
             <a href="mailto:missionariosbompastor@gmail.com" target="_blank">E-mail</a>
 
-            <button type="button">Doe Agora</button>
+            <button type="button" class="donate-btn">Doe Agora</button>
         </nav>
-    </header>
+    </nav>
 
     <section class="hero-about">
         <main>
             <h1>Projetos do Instituto Bom Pastor</h1>
             <p>Conheça os projetos que estamos desenvolvendo para transformar vidas e promover a inclusão social.</p>
-            <button type="button" class="donate-button">Doe Agora</button>
-            <button type="button" class="about-button">Conheça Nossa História</button>
+            <button type="button" class="donate-btn">Doe Agora</button>
+            <button type="button" class="learn-more-btn">Conheça Nossa História</button>
         </main>
     </section>
 
     <section class="projects">
+        <!-- Caminhão do Banho -->
         <section class="emphasis" id="caminhao-do-banho">
             <figure>
-                <img class="one" src="../src/assets/egorov.jpg" alt="Caminhão do Banho">
-                <img class="two" src="../src/assets/egorov.jpg" alt="Caminhão do Banho">
-                <img class="three" src="../src/assets/egorov.jpg" alt="Caminhão do Banho">
+                <img class="main-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                    alt="Equipe do Caminhão do Banho atendendo pessoas em situação de rua">
+                <figcaption>Equipe do Caminhão do Banho em ação nas ruas</figcaption>
             </figure>
             <article>
-                <h3>Caminhão do Banho</h3>
+                <h2>Caminhão do Banho</h2>
                 <p>
-                    O Caminhão do Banho leva dignidade e cuidado às pessoas em situação de rua, oferecendo banhos
-                    quentes, kits
-                    de higiene e atendimento humanizado. Este projeto promove saúde, autoestima e respeito, sendo um
-                    ponto de
-                    apoio e esperança para quem mais precisa.
+                    O <strong>Caminhão do Banho</strong> é um projeto inovador que leva dignidade e cuidado às pessoas em
+                    situação de rua. Todas as quintas-feiras, nossa equipe percorre diferentes regiões oferecendo banhos
+                    quentes, kits de higiene, corte de cabelo e cuidados com as unhas. O caminhão é adaptado para garantir
+                    privacidade e conforto, promovendo saúde e autoestima.
                 </p>
+                <ul>
+                    <li>Banhos quentes e privativos</li>
+                    <li>Kits de higiene pessoal</li>
+                    <li>Atendimento humanizado e escuta ativa</li>
+                    <li>Serviços de autocuidado: corte de cabelo e manicure</li>
+                    <li>Fortalecimento de vínculos e inclusão social</li>
+                </ul>
+                <section>
+                    <h3>Depoimento</h3>
+                    <blockquote>
+                        “O banho me faz sentir gente de novo. Obrigado por lembrarem de nós.”<br>
+                        <cite>— João, atendido pelo projeto</cite>
+                    </blockquote>
+                </section>
             </article>
         </section>
 
+        <!-- Escola dos Sonhos -->
         <section class="emphasis" id="escola-dos-sonhos">
             <figure>
-                <img class="one" src="../src/assets/egorov.jpg" alt="Escola dos Sonhos">
-                <img class="two" src="../src/assets/egorov.jpg" alt="Escola dos Sonhos">
-                <img class="three" src="../src/assets/egorov.jpg" alt="Escola dos Sonhos">
+                <img class="main-img" src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
+                    alt="Crianças estudando e brincando na Escola dos Sonhos">
+                <figcaption>Crianças participando de atividades educativas e culturais</figcaption>
             </figure>
             <article>
-                <h3>Escola dos Sonhos</h3>
-                <p>A Escola dos Sonhos é um espaço de educação, inclusão e transformação. Oferecemos reforço escolar,
-                    oficinas culturais e atividades lúdicas para crianças e adolescentes, incentivando o desenvolvimento integral e a construção de novos horizontes para o futuro.</p>
+                <h2>Escola dos Sonhos</h2>
+                <p>
+                    A <strong>Escola dos Sonhos</strong> é um espaço de acolhimento e desenvolvimento para crianças e
+                    adolescentes em situação de vulnerabilidade. Atendemos diariamente cerca de 40 jovens, oferecendo
+                    reforço escolar, atividades culturais, esportivas e apoio psicossocial. Nosso objetivo é criar
+                    oportunidades para que cada criança descubra e desenvolva seu potencial.
+                </p>
+                <ul>
+                    <li>Reforço escolar e acompanhamento pedagógico</li>
+                    <li>Oficinas de arte, música e esportes</li>
+                    <li>Apoio psicológico e social</li>
+                    <li>Alimentação saudável e ambiente seguro</li>
+                    <li>Envolvimento das famílias e da comunidade</li>
+                </ul>
+                <section>
+                    <h3>Galeria</h3>
+                    <div class="gallery">
+                        <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=300&q=80"
+                            alt="Oficina de artes">
+                        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=300&q=80"
+                            alt="Crianças brincando no pátio">
+                        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=300&q=80"
+                            alt="Aula de música">
+                    </div>
+                </section>
             </article>
         </section>
 
+        <!-- Projeto Padre Lothario -->
         <section class="emphasis" id="padre-lothario">
             <figure>
-                <img class="one" src="../src/assets/egorov.jpg" alt="Projeto Padre Lothario">
-                <img class="two" src="../src/assets/egorov.jpg" alt="Projeto Padre Lothario">
-                <img class="three" src="../src/assets/egorov.jpg" alt="Projeto Padre Lothario">
+                <img class="main-img" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+                    alt="Distribuição de alimentos e acolhimento de famílias">
+                <figcaption>Distribuição de alimentos e apoio a famílias</figcaption>
             </figure>
             <article>
-                <h3>Projeto Padre Lothario</h3>
-                <p>Inspirado pelo legado do Padre Lothario, este projeto atua no acolhimento de famílias em situação de
-                    vulnerabilidade, promovendo ações de assistência social, distribuição de alimentos e fortalecimento
-                    de
-                    vínculos comunitários, sempre com foco na solidariedade e no amor ao próximo.</p>
+                <h2>Projeto Padre Lothario</h2>
+                <p>
+                    Inspirado pelo legado do Padre Lothario, este projeto acolhe famílias em situação de vulnerabilidade,
+                    promovendo ações de assistência social, distribuição de alimentos, roupas e fortalecimento de vínculos
+                    comunitários. O foco é criar um ambiente seguro, onde cada família se sinta apoiada e valorizada.
+                </p>
+                <ul>
+                    <li>Distribuição de cestas básicas e refeições</li>
+                    <li>Atendimento social e psicológico</li>
+                    <li>Rodas de conversa e oficinas para famílias</li>
+                    <li>Promoção da solidariedade e cooperação comunitária</li>
+                </ul>
+                <section>
+                    <h3>História de Impacto</h3>
+                    <blockquote>
+                        “Receber a cesta básica foi um alívio. Mas o mais importante foi o acolhimento e o carinho.”<br>
+                        <cite>— Maria, beneficiada pelo projeto</cite>
+                    </blockquote>
+                </section>
             </article>
         </section>
 
+        <!-- Missão Koibe -->
         <section class="emphasis" id="missao-koibe">
             <figure>
-                <img class="one" src="../src/assets/egorov.jpg" alt="Missão Koibe">
-                <img class="two" src="../src/assets/egorov.jpg" alt="Missão Koibe">
-                <img class="three" src="../src/assets/egorov.jpg" alt="Missão Koibe">
+                <img class="main-img" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80"
+                    alt="Equipe da Missão Koibe em visita ao complexo penitenciário">
+                <figcaption>Equipe da Missão Koibe em ação no Complexo Penitenciário de Piraquara</figcaption>
             </figure>
             <article>
-                <h3>Missão Koibe</h3>
+                <h2>Missão Koibe</h2>
                 <p>
-                    A Missão Koibe leva esperança e apoio a comunidades indígenas e rurais, promovendo inclusão, acesso
-                    a
-                    direitos básicos e valorização cultural. Por meio de parcerias e voluntariado, buscamos construir
-                    pontes de
-                    respeito e oportunidades para todos.
+                    A <strong>Missão Koibe</strong> leva esperança e apoio a comunidades em situação de privação de
+                    liberdade. Realizamos visitas semanais ao Complexo Penitenciário de Piraquara, promovendo rodas de
+                    conversa, escuta ativa e apoio espiritual. O objetivo é construir pontes de respeito, promover a
+                    reintegração social e reduzir a reincidência criminal.
                 </p>
+                <ul>
+                    <li>Visitas semanais e rodas de conversa</li>
+                    <li>Escuta ativa e apoio espiritual</li>
+                    <li>Promoção da dignidade e respeito</li>
+                    <li>Reintegração social e apoio aos egressos</li>
+                </ul>
+                <section>
+                    <h3>Depoimento</h3>
+                    <blockquote>
+                        “A visita da equipe me deu forças para recomeçar e acreditar em um futuro melhor.”<br>
+                        <cite>— Paulo, participante da Missão Koibe</cite>
+                    </blockquote>
+                </section>
             </article>
         </section>
     </section>
@@ -136,19 +203,25 @@
         <nav>
             <h3>Institucional</h3>
             <a href="about.html" target="_parent">Sobre Nós</a>
-            <a href="#" target="_parent">Missão e Visão</a>
-            <a href="#" target="_parent">Equipe</a>
+            <a href="projects.html" target="_parent">Missão</a>
         </nav>
         <nav>
             <h3>Contatos</h3>
             <a href="mailto:missionariosbompastor@gmail.com" target="_blank">E-mail</a>
             <a href="tel:+(41)3589-3227" target="_blank">Telefone</a>
+            <a href="https://www.instagram.com/bompastor_br/" target="_blank" rel="noopener noreferrer">Instagram</a>
         </nav>
         <nav>
             <h3>Transparência</h3>
-            <a href="documentation.html" target="_parent">Documentação</a>
-            <a href="#" target="_parent">Recursos Públicos</a>
+            <a href="transparency.html" target="_parent">Documentação</a>
+            <a href="transparency.html" target="_parent">Recursos Públicos</a>
         </nav>
+        <footer>
+            <p>&copy; 2023 <strong>Instituto Bom Pastor</strong>. Todos os direitos reservados.</p>
+            <p>Desenvolvido por <a href="https://github.com/Gustx21" target="_blank" rel="noopener noreferrer">Gustavo
+                    André</a></p>
+        </footer>
     </footer>
 </body>
+
 </html>

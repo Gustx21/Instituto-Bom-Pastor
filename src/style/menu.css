@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .menu {
     display: flex;
     justify-content: space-around;
